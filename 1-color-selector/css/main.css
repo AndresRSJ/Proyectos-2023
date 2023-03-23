@@ -1,0 +1,37 @@
+body{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 10rem;
+    padding: 1.5em 3em;
+
+    background-color: rgb(255 255 255/ 0.4);
+    border: 2px solid rgb(255 255 255/ 0.8);
+    border-style: dotted;
+    border-radius: 5px;
+}
+.container__button{
+    padding: 0.5em 1em;
+    background-color: rgb(1, 226, 31);
+
+    border-radius: 7px;
+    color: white;
+}
+.container__button:hover{
+    scale: 1.05;
+}
+.container__button:active{
+    scale: 1;
+}
+.container__color{
+    padding: 0.2em;
+
+    font-weight: 600;
+}
