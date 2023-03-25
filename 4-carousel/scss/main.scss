@@ -1,0 +1,161 @@
+/* font-family: 'Lora', serif;
+font-family: 'Poppins', sans-serif; */
+
+$colors:(
+    "ligth-gray": #b7b7b7,
+    "purple": #40509D,
+    "ligth-cyan":#34E0F8,
+    "cyan": #03CDF3, 
+    "white": #fff,
+);
+
+$fonts:(
+    "titles": 'Lora',
+    "descriptions": 'Outfit', 
+);
+$fonts-size:(
+    "titles-big": 1.5rem,
+    "titles-small": 1.2rem,
+    "normal": 1.1rem,
+    "small": 1rem,
+);
+
+body{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Outfit', sans-serif;
+    background-color: white
+}
+.container{
+    width: 50%;
+    max-width: 120em;
+
+    background-color: white;
+    overflow: hidden;
+}
+.carousel{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5em;
+
+    padding: 0.5em;
+
+    width: 300%;
+
+    transition: all 0.7s ease-in-out;
+    transform: translateX(0%);
+
+    &__card{
+        width: calc(100% / 3);
+        padding: 1rem;
+
+        background-color: map-get($colors, "purple");
+        border-radius: 12px;
+
+        box-shadow: 4px 4px 6px rgb(0 0 0/ 0.4);
+
+        overflow: hidden;
+    }
+
+    &__card--1{}
+    &__card--2{}
+    &__card--3{}
+}
+
+.buttons{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+
+    padding: 0.2em;
+
+    &__button{
+        width:1.2em;
+        height: 1.2em;
+
+        background-color:map-get($colors, "ligth-gray");
+        border-radius: 50%;
+
+        transition: all 0.2s ease-out;
+       
+    }
+    
+
+}
+.activo{
+    background-color: map-get($colors, "purple");
+    transform: scale(1.1);
+}
+
+
+
+.card{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;
+
+    &-flex{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__info-1{
+        width: 100%;
+        padding: 1em;
+    }
+        &__profile{
+            width: 8em;
+            height: 8em;
+
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            border-radius: 50%;
+
+            background-color: lightpink;
+
+            box-shadow: 4px 4px 6px rgb(0 0 0/ 0.4);
+        }
+           
+    &__info-2{
+        width: 100%;
+
+    }
+        &__name--p{
+            color: map-get($colors, "ligth-cyan");
+          
+            font-family: map-get($fonts, "titles");
+            font-size: map-get($fonts-size, "titles-small");
+        }
+        &__developer--p{
+            color: map-get($colors, "cyan");
+
+            font-family: map-get($fonts, "descriptions");
+            font-size: map-get($fonts-size, "small");
+            font-weight: 300;
+        }
+    &__info-3{      
+        width: 100%;
+        padding: 1.2em 2em;
+    }
+        &__info-3--p{
+            color: map-get($colors, "white");
+             
+            font-family: map-get($fonts, "descriptions");
+            font-size: map-get($fonts-size, "normal");
+            font-weight: 300;
+        }
+
+}
+

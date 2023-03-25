@@ -1,0 +1,110 @@
+/* font-family: 'Lora', serif;
+font-family: 'Poppins', sans-serif; */
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  font-family: "Outfit", sans-serif;
+  background-color: white;
+}
+
+.container {
+  width: 50%;
+  max-width: 120em;
+  background-color: white;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5em;
+  padding: 0.5em;
+  width: 300%;
+  transition: all 0.7s ease-in-out;
+  transform: translateX(0%);
+}
+.carousel__card {
+  width: 33.3333333333%;
+  padding: 1rem;
+  background-color: #40509D;
+  border-radius: 12px;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+}
+.buttons {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  padding: 0.2em;
+}
+.buttons__button {
+  width: 1.2em;
+  height: 1.2em;
+  background-color: #b7b7b7;
+  border-radius: 50%;
+  transition: all 0.2s ease-out;
+}
+
+.activo {
+  background-color: #40509D;
+  transform: scale(1.1);
+}
+
+.card {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.card-flex {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+.card__info-1 {
+  width: 100%;
+  padding: 1em;
+}
+.card__profile {
+  width: 8em;
+  height: 8em;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  background-color: lightpink;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4);
+}
+.card__info-2 {
+  width: 100%;
+}
+.card__name--p {
+  color: #34E0F8;
+  font-family: "Lora";
+  font-size: 1.2rem;
+}
+.card__developer--p {
+  color: #03CDF3;
+  font-family: "Outfit";
+  font-size: 1rem;
+  font-weight: 300;
+}
+.card__info-3 {
+  width: 100%;
+  padding: 1.2em 2em;
+}
+.card__info-3--p {
+  color: #fff;
+  font-family: "Outfit";
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+/*# sourceMappingURL=main.css.map */
