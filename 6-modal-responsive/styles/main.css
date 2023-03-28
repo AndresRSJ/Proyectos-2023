@@ -1,0 +1,86 @@
+body{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+.modal{
+    position: relative;
+    max-width: 20rem;
+    margin: calc(50vh - 5rem) auto;
+    padding: 0.5rem;
+    
+    text-align: center;
+
+    background-color: rgb(218, 218, 218);
+
+    border-radius: 15px;
+}
+
+.icon__container{
+    margin: 0.7rem;
+    width: 3rem;
+
+    overflow: hidden;
+}
+
+.container__top{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.header__container{
+    margin-right: 2rem;
+}
+.header__container--h3{
+    font-size: 1.5rem;
+}
+.header__container--p{
+    font-size: 0.9rem;
+    color: rgb(112, 112, 112);
+}
+
+.modal__button{
+    margin: 1rem auto;
+
+    width: 90%;
+    padding: 0.5rem 0;
+
+    border: 1px solid rgb(150, 150, 150);
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+.modal__buton--1:hover{
+    color: white;
+
+    background-color: rgb(44, 101, 255);
+}
+.modal__button--2:hover{
+    background-color: rgb(131, 131, 131);
+}
+
+@media screen and (min-width: 768px){
+    .modal{
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-around;
+        flex: 1 0 auto;
+
+        max-width: 27rem;
+        padding: 1rem 0;
+    }
+    .modal__button{
+        width: 10rem;
+    }
+    .container__top{
+        flex-flow: column wrap;
+    }
+    .buttons__container{
+        display: flex;
+        flex-flow: column wrap;
+        align-items: flex-end;
+    }
+   
+    
+}

@@ -4,6 +4,8 @@ font-family: 'Poppins', sans-serif; */
 $colors:(
     "ligth-gray": #b7b7b7,
     "purple": #40509D,
+    "pink": rgb(255, 87, 115),
+    "blue": rgb(85, 144, 255),
     "ligth-cyan":#34E0F8,
     "cyan": #03CDF3, 
     "white": #fff,
@@ -30,7 +32,7 @@ body{
     background-color: white
 }
 .container{
-    width: 50%;
+    width: 60%;
     max-width: 120em;
 
     background-color: white;
@@ -68,6 +70,7 @@ body{
 }
 
 .buttons{
+    width: 100%;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -145,6 +148,12 @@ body{
             font-size: map-get($fonts-size, "small");
             font-weight: 300;
         }
+        &__developer--p-pink{
+            color: map-get($colors, "pink");
+        }
+        &__developer--p-blue{
+            color: map-get($colors, "blue");
+        }
     &__info-3{      
         width: 100%;
         padding: 1.2em 2em;
@@ -158,4 +167,14 @@ body{
         }
 
 }
+@media screen and (max-width: 768px){
+ .container{
+    width: 90%;
 
+    overflow: scroll;
+ }
+ .buttons{
+    display: none;
+ }
+}
+    
