@@ -1,0 +1,100 @@
+body{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgb(21, 21, 21);
+}
+.section{
+    min-width: 100%;
+    height: 30rem;
+
+    &__container{
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: center;
+
+        width: 80%;
+        height: 100%;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.card{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+
+    width: 50%;
+
+    border-radius: 12px;
+
+    background-color: rgb(255, 255, 255);
+    box-shadow: 15px 15px 30px rgb(0 0 0/ 0.4);
+
+    &__cover{
+        width: 70%;
+
+        margin-bottom: 3rem;
+        margin-top: 1rem;
+    }
+    &__cover img{
+        width: 100%;
+        overflow: hidden;
+    
+        border-radius: 16px;
+        box-shadow: 8px 8px 12px rgb(0 0 0/ 0.4);
+    }
+
+    &__title{
+        width: 100%;
+        padding: 0.2em;
+
+        color: rgb(0 0 0/ 0.8);
+
+        font-size: 1.2rem;
+        font-weight: 600;
+        text-align: center;
+    } 
+}
+
+.controls{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    margin: 0.5rem;
+
+    border-radius: 12px;
+
+    background-color: rgb(255, 255, 255);
+    box-shadow: 10px 10px 20px rgb(0 0 0/ 0.4);
+
+    cursor: pointer;
+
+    &__icon{
+        max-width: 3rem;
+    }
+    &__icon:hover{
+        scale: 1.05;
+    }
+
+    &__icon--before{
+        width: 2rem;
+    }
+    &__icon--play{
+        width: 3rem;
+    }
+    &__icon--after{
+        width: 2rem;
+    }
+
+}
+
