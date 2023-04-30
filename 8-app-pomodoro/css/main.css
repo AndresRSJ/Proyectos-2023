@@ -1,0 +1,133 @@
+:root{
+    --green: #81FF45;
+    --yellow: #ffb813;
+    --black: #000000;
+    --blue: #3F8CFF;
+    --light-red: #F27C7C;
+    --white: #ffffff;
+}
+
+body{
+    color: black;
+    min-height: 100vh;
+
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+.app__container{
+    max-width: 30rem;
+    padding: 1em 1.5em;
+
+    background-color: white;
+
+    border-radius: 16px;
+
+    box-shadow: 15px 15px 30px rgb(0 0 0/ 0.25), -15px -15px 30px rgb(0 0 0/ 0.20);
+}
+.header__content{
+    width: 100%;
+    margin: 0.5rem;
+
+    text-align: center;
+}
+.timer{
+    font-size: 3.5rem;
+    font-weight: 600;
+
+    color: rgb(0 0 0/ 0.85);
+}
+.task-name{
+    font-size: 1.5rem;
+}
+
+.form{
+    margin-bottom: 1rem;
+}
+.input-task{
+    width: 15rem;
+
+    padding: 1em;
+
+    border-radius: 16px;
+    border: 1px solid rgb(238, 238, 238);
+    box-shadow: inset 1px 1px 2px rgb(0 0 0/ 0.5), inset -1px -1px 2px rgb(0 0 0/ 0.25);
+}
+.input-task:focus{
+    outline: none;
+
+}
+.input-task:active{
+    border: none;
+}
+.btn-add{
+    padding: 1em 0.5em;
+    border-radius: 8px;
+    border: 0;
+
+    background-color: var(--blue);
+    color: var(--white);
+    
+    font-weight: 600;
+}
+
+.tasks{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.task{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0.5em;
+
+    border-radius: 12px;
+
+    box-shadow: 12px 12px 24px rgb(0 0 0/ 0.25), -12px -12px 24px rgb(0 0 0/ 0.10);
+
+    background-color: var(--white);
+
+}
+
+.title-task{
+    color: rgb(0 0 0/ 0.8);
+    font-weight: 600;
+    font-size: 1.1rem;
+
+    line-height: 29px;
+
+    letter-spacing: 0.09em;
+}
+
+.completed button{
+    padding: 0.8em 1.2em;
+
+    border-radius: 8px;
+    border: 0;
+
+    background-color: var(--light-red);
+    color: var(--white);
+
+    font-weight: 600;
+}
+.done{
+    padding: 0.8em 1.2em;
+
+    color: var(--green);
+
+    font-weight: 600;
+}
